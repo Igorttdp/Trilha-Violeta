@@ -1,0 +1,15 @@
+.color-white {
+    color: var(--white);
+}
+
+.color-main {
+    color: var(--main);
+}
+
+.bg-color-white {
+    background-color: var(--white);
+}
+
+.bg-color-main {
+    background-color: var(--main);
+}

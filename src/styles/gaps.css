@@ -1,0 +1,27 @@
+.smallest-gap {
+    gap: var(--smallest-gap);
+}
+
+.small-gap {
+    gap: var(--small-gap);
+}
+
+.gap1 {
+    gap: var(--gap1);
+}
+
+.gap2 {
+    gap: var(--gap2);
+}
+
+.gap3 {
+    gap: var(--gap3);
+}
+
+.gap4 {
+    gap: var(--gap4);
+}
+
+.gap5 {
+    gap: var(--gap5);
+}

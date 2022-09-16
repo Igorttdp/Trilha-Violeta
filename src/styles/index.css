@@ -1,0 +1,155 @@
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(228 184 229 / 50%);
+    backdrop-filter: blur(4px);
+}
+
+#header__logo {
+    width: 100px;
+}
+
+#home {
+    background-image: linear-gradient(#fdfdfe 0%, #d3bee3 100%);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#logo {
+    max-width: 100px;
+    width: 100%;
+}
+
+.home__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.home__imgs {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.home__imgs img {
+    max-width: 300px;
+    min-width: 178px;
+    width: 100%;
+}
+
+.home__c-btns {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.home__btns {
+    max-width: 200px;
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+    background-color: #7a45a3;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__btns a {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1rem;
+    color: #fdfdfe;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .3s;
+}
+
+.home__btns a:hover {
+    transform: scale(1.2);
+    transition: all .3s;
+}
+
+.home__btns a img {
+    max-width: 56px;
+    width: 100%;
+}
+
+#services {
+    background-image: linear-gradient(#D3BEE3 0%, #ebe4ef 20%, #f8effd 100%);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+#services p {
+    color: #808879;
+}
+
+.services__leaves {
+    background-image: url(../assets/leaves.png);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: right center;
+    position: absolute;
+}
+
+.services__header {
+    text-align: center;
+}
+
+.services__header h2 {
+    color: #9c83b1;
+    font-size: 4rem;
+}
+
+.services__header p {
+    font-size: 1.7rem;
+}
+
+.services__cards {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 13rem;
+    column-gap: 10vw;
+}
+
+.services__card {
+    max-width: 200px;
+    width: 100%;
+    min-height: 211px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.services__card>div {
+    width: 150px;
+    height: 150px;
+    background-color: #b5a1d2;
+    border-radius: 10px;
+    box-shadow: 4px 5px 10px #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services__card>div>img {
+    max-width: 100px;
+}

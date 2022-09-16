@@ -1,0 +1,69 @@
+button {
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: var(--blue1);
+    color: var(--white);
+    font-size: 1.4rem;
+    padding: 1rem 1.2rem;
+    border: none;
+}
+
+.btn-grey1 {
+    background-color: var(--grey0);
+}
+
+.btn-grey1:hover {
+    background-color: var(--grey1);
+}
+
+.btn-white {
+    background-color: var(--white);
+}
+
+.btn-white:hover {
+    background-color: #F8F9FA;
+}
+
+.btn-outline {
+    background-color: #FFFFFF;
+    padding: 1rem 1.2rem;
+    font-size: 1.4rem;
+}
+
+.btn-outline:hover {
+    background-color: #EDF2FF;
+    color: var(--blue1);
+}
+
+.btn-outline--dark {
+    border: 1px #000 solid;
+    color: #000;
+}
+
+
+button:disabled {
+    border: var(--grey4) 2px solid;
+    color: var(--grey3);
+    font-size: 1.4rem;
+    padding: 1rem 1.2rem;
+}
+
+.btn-heart {
+    border: none;
+    background: transparent url(../assets/heartBlack.png) no-repeat;
+    background-size: cover;
+    width: 2.3rem;
+    height: 2rem;
+}
+
+.btn-heart--like {
+    background: transparent url(../assets/heartRed.png) no-repeat;
+    background-size: cover;
+}
+
+.btn-follow, .btn-unfollow {
+    padding: 0.5rem 1.2rem;
+}

@@ -1,0 +1,38 @@
+.input-default {
+    min-width: 30rem;
+    background-color: var(--white);
+    padding: 1.6rem 2rem;
+    border-radius: 4px;
+    border: var(--grey4) 2px solid;
+    outline: none;
+}
+
+.input-default::placeholder {
+    color: var(--grey3);
+}
+
+.input-default:focus {
+    border: #4263EB 2px solid;
+}
+
+.txtarea-default {
+    font-family: sans-serif;
+    min-width: 30rem;
+    background-color: var(--white);
+    padding: 2.8rem 2.1rem;
+    border-radius: 4px;
+    border: var(--grey4) 2px solid;
+    resize: none;
+    outline: 0;
+}
+
+.txtarea-default:focus {
+    border: #4263EB 2px solid;
+}
+
+.closeBtn {
+    width: 40px;
+    height: 40px;
+    background-image: url(../assets/closeBtn.svg);
+    object-fit: cover;
+}
