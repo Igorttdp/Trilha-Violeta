@@ -110,11 +110,11 @@ header {
 
 .services__header h2 {
     color: #9c83b1;
-    font-size: 4rem;
+    font-size: clamp(2.9rem, 5vw, 4rem)
 }
 
 .services__header p {
-    font-size: 1.7rem;
+    font-size: clamp(1.4rem, 2vw, 1.7rem);
 }
 
 .services__cards {
@@ -180,7 +180,7 @@ header {
 }
 
 #meet-us h2 {
-    font-size: 4rem;
+    font-size: clamp(2.9rem, 5vw, 4rem);
     color: #9482ae;
     font-weight: bolder;
 }
@@ -335,11 +335,12 @@ header {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    padding: 5rem 0;
 }
 
 #FAQ h2 {
     color: #533a66;
-    font-size: 6rem;
+    font-size: clamp(2rem, 5vw, 6rem);
     font-weight: bolder;
 }
 
@@ -355,13 +356,13 @@ header {
 }
 
 .accordion-item {
-    font-size: 2rem;
+    font-size: clamp(1.7rem, 4vw, 2rem);
     color: #fff;
     background-color: #9770b3;
 }
 
 .accordion-item button {
-    font-size: 3rem;
+    font-size: clamp(2rem, 4vw, 3rem);
     color: #fff;
     background-color: #9770b3;
     border: none;
@@ -382,4 +383,50 @@ header {
 .accordion-body ul {
     list-style: disc;
     padding-left: 4rem;
+}
+
+#find-us {
+    background-image: linear-gradient(160deg, #f6f0fa 0%, #e9daf1 50%, #f6f0fa 120%);
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+}
+
+#find-us h2 {
+    color: #533a66;
+    font-size: clamp(2.5rem, 5vw, 6rem);
+    font-weight: bolder;
+}
+
+.find-us__transition {
+    width: 100%;
+    min-height: 20vh;
+    background-image: linear-gradient(#ECDFF3 0%, #E3CFEE 30%, #ECDFF3 100%);
+    position: absolute;
+    top: -10rem;
+    filter: blur(20px);
+}
+
+iframe {
+    border-radius: 20px;
+    width: 60vw;
+    height: 35vw;
+}
+
+.find-us__btn {
+    border: none;
+    font-size: 2rem;
+    background-color: #9770b3;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
+    transition: all .3s;
+}
+
+.find-us__btn:hover {
+    background-color: #533a66;
+    transition: all .3s;
 }

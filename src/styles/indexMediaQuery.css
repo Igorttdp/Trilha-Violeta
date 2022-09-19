@@ -1,0 +1,73 @@
+@media(max-width: 1470px) {
+    .home__container {
+        flex-direction: column;
+        padding: 5rem;
+    }
+
+    .c-bedrooms {
+        max-width: 85%;
+    }
+}
+
+@media(max-width: 840px) {
+    .home__container {
+        flex-direction: row;
+        padding: 5rem 0;
+    }
+
+    .c-about {
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 0;
+    }
+
+    .c-about__content {
+        padding: 4rem 3rem;
+    }
+
+    .c-about__img img {
+        max-width: 80%;
+    }
+}
+
+@media(max-width: 600px) {
+    .home__container {
+        gap: 1rem;
+    }
+
+    .services__cards {
+        row-gap: 9rem;
+    }
+
+    .c-about__content {
+        padding: 2rem 0;
+    }
+
+    iframe {
+        width: 85%;
+        height: 140vw;
+    }
+}
+
+@media(max-width: 375px) {
+    .home__container {
+        max-width: 90%;
+    }
+
+    .home__imgs img {
+        min-width: 160px;
+    }
+
+    .home__btns a img {
+        width: 40px;
+    }
+
+    .c-bedrooms__card img {
+        width: 85%;
+    }
+
+    .find-us__transition {
+        min-height: 10vh;
+        top: -4rem;
+    }
+}
