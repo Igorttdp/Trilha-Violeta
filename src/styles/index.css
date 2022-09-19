@@ -88,7 +88,7 @@ header {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    padding: 5rem;
+    padding: 8rem 5rem 5rem;
 }
 
 #services p {
@@ -167,6 +167,7 @@ header {
     position: relative;
     z-index: 1;
     height: 130vh;
+    padding-top: 8rem;
 }
 
 .meet-us__transition {
@@ -228,6 +229,7 @@ header {
     background-color: #886A9C;
     padding: 5rem 0;
     color: #FFFFFF;
+    padding-top: 8rem;
 }
 
 .c-about {
@@ -279,6 +281,7 @@ header {
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
+    padding: 8rem 0;
 }
 
 #bedrooms h2 {
@@ -324,4 +327,59 @@ header {
 .c-bedrooms__card>button:hover {
     background-color: #7a45a3;
     transition: all .3s;
+}
+
+#FAQ {
+    background-image: linear-gradient(150deg, #dbc2e9 0%, #f4ecf8 20%, #dbc2e9 120%);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#FAQ h2 {
+    color: #533a66;
+    font-size: 6rem;
+    font-weight: bolder;
+}
+
+#FAQ>div {
+    min-width: 85%;
+    width: 100%;
+}
+
+#accordionFAQ {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+}
+
+.accordion-item {
+    font-size: 2rem;
+    color: #fff;
+    background-color: #9770b3;
+}
+
+.accordion-item button {
+    font-size: 3rem;
+    color: #fff;
+    background-color: #9770b3;
+    border: none;
+}
+
+.accordion-item button.accordion-button:not(.collapsed) {
+    color: #fff;
+    border: none;
+    background-color: #9770b3;
+}
+
+.accordion-item button.accordion-button:focus, .accordion-item button.accordion-button:focus-visible, .accordion-item button.accordion-button:active {
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.accordion-body ul {
+    list-style: disc;
+    padding-left: 4rem;
 }
