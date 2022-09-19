@@ -3,6 +3,7 @@ header {
     top: 0;
     background-color: rgb(228 184 229 / 50%);
     backdrop-filter: blur(4px);
+    z-index: 9;
 }
 
 #header__logo {
@@ -152,4 +153,55 @@ header {
 
 .services__card>div>img {
     max-width: 100px;
+}
+
+#meet-us {
+    background: #FFFFFF url(../assets/meetUsDegradê.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.meet-us__transition {
+    width: 100%;
+    min-height: 10vh;
+    background-image: linear-gradient(#F7EEFC 50%, transparent 100%);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+#meet-us h2 {
+    font-size: 4rem;
+    color: #9482ae;
+    font-weight: bolder;
+}
+
+#carouselTrilhaVioleta {
+    width: 65%;
+    border-radius: 20px;
+}
+
+#carouselTrilhaVioleta img {
+    border-radius: 20px;
+    min-height: 70vh;
+    max-height: 70vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-inner {
+    border-radius: 20px;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+}
+
+.carousel-caption p {
+    font-size: 1.6rem;
 }
