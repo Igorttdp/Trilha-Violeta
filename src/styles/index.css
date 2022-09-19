@@ -271,3 +271,57 @@ header {
 .c-about__img img {
     width: 100%;
 }
+
+#bedrooms {
+    background: #E2B8E7 url(../assets/bedrooms.png) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#bedrooms h2 {
+    font-size: 6.5rem;
+    color: #533a66;
+    font-weight: bolder;
+}
+
+.c-bedrooms {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.c-bedrooms__card {
+    color: var(--white);
+    background-color: #9770b3;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.c-bedrooms__card>img {
+    border-radius: 8px;
+}
+
+.c-bedrooms__card>button {
+    color: #fff;
+    letter-spacing: 0.25rem;
+    font-size: 1.4rem;
+    background-color: #9754bf;
+    padding: 0.25rem 2rem;
+    border: 2px solid #7a45a3;
+    border-radius: 8px;
+    transition: all .3s;
+}
+
+.c-bedrooms__card>button:hover {
+    background-color: #7a45a3;
+    transition: all .3s;
+}

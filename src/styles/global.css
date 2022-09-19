@@ -9,7 +9,7 @@ html {
 }
 
 :root {
-    font: 10px sans-serif, serif;
+    font: 10px 'Montserrat', serif;
 
     /* colors */
     --main: #cf96dc;
