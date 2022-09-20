@@ -1,6 +1,19 @@
 import { aptos } from "./database.js";
 
-class Switch {
+class Interactions {
+  static showWppBtn() {
+    const btn = document.querySelector(".float__wpp");
+
+    window.onscroll = () => {
+      if (
+        document.body.scrollTop >= 200 ||
+        document.documentElement.scrollTop >= 200
+      ) {
+        btn.classList.add("float__wpp--active");
+      } else btn.classList.remove("float__wpp--active");
+    };
+  }
+
   static virtualTour() {
     const btn = document.querySelector(".find-us__btn");
     btn.onclick = () => {
@@ -29,13 +42,18 @@ class Render {
       const h4 = document.createElement("h4");
       const p = document.createElement("p");
       const aptUl = document.createElement("ul");
-      const btn = document.createElement("button");
+      const a = document.createElement("a");
 
       li.classList.add("c-bedrooms__card");
       img.setAttribute("src", "./src/assets/Camada 5.png");
       h4.innerText = `${el.name} - ${el.num}`;
       p.innerText = el.desc;
-      btn.innerText = "RESERVE JÁ";
+      a.innerText = "RESERVE JÁ";
+      a.setAttribute(
+        "href",
+        `https://wa.me/5561999856544?text=Olá!%20Tenho%20interesse%20em%20reservar%20o%20apartamento%20${el.num}`
+      );
+      a.setAttribute("target", "blank_");
 
       el.avaliable.forEach((el) => {
         if (el.air) {
@@ -73,7 +91,7 @@ class Render {
           aptUl.appendChild(aptLi);
         }
 
-        li.append(img, h4, p, aptUl, btn);
+        li.append(img, h4, p, aptUl, a);
         ul.appendChild(li);
       });
     });
@@ -81,4 +99,5 @@ class Render {
 }
 
 Render.apartments();
-Switch.virtualTour();
+Interactions.showWppBtn();
+Interactions.virtualTour();

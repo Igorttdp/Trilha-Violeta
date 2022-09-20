@@ -9,6 +9,21 @@
     }
 }
 
+@media(max-width: 991.98px) {
+    nav div.container-fluid {
+        gap: 1rem;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+    iframe {
+        width: 70vw;
+        height: 40vw;
+    }
+}
+
 @media(max-width: 840px) {
     .home__container {
         flex-direction: row;
@@ -44,8 +59,8 @@
     }
 
     iframe {
-        width: 85%;
-        height: 140vw;
+        width: 80%;
+        height: 120vw;
     }
 }
 
