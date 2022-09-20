@@ -295,18 +295,35 @@ header {
     flex-flow: row wrap;
     justify-content: center;
     gap: 7rem;
+    padding: 0;
 }
 
 .c-bedrooms__card {
     color: var(--white);
     background-color: #9770b3;
     width: 350px;
-    height: 350px;
+    min-height: 350px;
+    padding: 2rem;
     border-radius: 10px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.c-bedrooms__card h4 {
+    font-size: 2rem;
+}
+
+.c-bedrooms__card p {
+    font-size: 1.7rem;
+}
+
+.c-bedrooms__card ul {
+    list-style: disc;
+    font-size: 1.4rem;
+    padding: 0;
 }
 
 .c-bedrooms__card>img {
@@ -392,7 +409,6 @@ header {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    height: 120vh;
 }
 
 #find-us h2 {
