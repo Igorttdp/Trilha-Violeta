@@ -43,6 +43,13 @@
     .c-about__img img {
         max-width: 80%;
     }
+
+    .f-content {
+        grid-template-columns: repeat(2, 200px);
+        grid-template-areas: "f-logo f-logo" "social contact";
+        text-align: center;
+        row-gap: 2rem;
+    }
 }
 
 @media(max-width: 600px) {
@@ -61,6 +68,14 @@
     iframe {
         width: 80%;
         height: 120vw;
+    }
+
+    .f-content {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 5rem;
+        padding: 4rem;
     }
 }
 
@@ -84,5 +99,13 @@
     .find-us__transition {
         min-height: 10vh;
         top: -4rem;
+    }
+
+    .c-partners {
+        gap: 2rem;
+    }
+
+    .c-partners a img {
+        max-width: 100px;
     }
 }
