@@ -250,23 +250,28 @@ nav div.container-fluid {
 }
 
 .carousel-caption {
-    bottom: -12rem;
+    bottom: -7rem;
     color: #000;
 }
 
 .carousel-caption h5 {
+    text-transform: uppercase;
     font-size: 2rem;
-    color: #a9ada3;
+    color: #745469;
+    font-weight: 700;
 }
 
-.carousel-caption p {
-    font-size: 1.6rem;
-    color: #745469;
+.carousel-control {
+    width: fit-content;
+    background-color: rgb(180, 180, 180);
+    padding: 1rem;
 }
 
 .carousel-control-next, .carousel-control-prev {
     top: 40%;
     height: fit-content;
+    padding: 1rem;
+    margin: 0 3rem;
 }
 
 #about-us {
@@ -302,6 +307,13 @@ nav div.container-fluid {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+}
+
+.c-about__img img {
+    max-width: 45rem;
+    height: 33rem;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .c-about__img span {
@@ -371,6 +383,8 @@ nav div.container-fluid {
 }
 
 .c-bedrooms__card>img {
+    max-width: 280px;
+    width: 100%;
     border-radius: 8px;
 }
 
@@ -606,7 +620,10 @@ footer {
     grid-area: contact;
 }
 
-.f-contact button {
+.f-contact a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
     background-color: transparent;
     border: none;
     transition: all .3s;
@@ -623,7 +640,7 @@ footer {
     font-weight: 600;
 }
 
-.f-contact button:hover {
+.f-contact a:hover {
     transform: scale(1.05);
     transition: all .3s;
 }
